@@ -328,7 +328,7 @@ public class OnlineShoppingSystem {
     CustomerAccess customerAccess;
     public OnlineShoppingSystem() {
         try {
-            con = DriverManager.getConnection("jdbc:mysql://localhost/onlineshop", "root", "raboonisherin");
+            con = DriverManager.getConnection("jdbc:mysql://localhost/onlineshop", ******, *********);
             stmt = con.createStatement();
             scanner = new Scanner(System.in);
             adminAccess = new AdminAccess(con, stmt, scanner);
